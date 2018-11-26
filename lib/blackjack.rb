@@ -59,13 +59,13 @@ end
 
 def runner
   welcome
-  until card_total > 21
+  until card_total > 21 do 
     card_total = initial_round
     updateScore = hit?
     display_card_total(updateScore)
     
     if (total > card_total)
-    prompt_user
+      
   
   
   
