@@ -27,6 +27,7 @@ def initial_round
   secCard = deal_card 
   total = secCard + firstCard
   display_card_total(total)
+  
   total
 end
 
@@ -55,4 +56,3 @@ end
 def runner
   # code runner here
 end
-    
