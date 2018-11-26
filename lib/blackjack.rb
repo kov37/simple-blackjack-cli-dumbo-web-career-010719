@@ -25,11 +25,15 @@ end
 def initial_round
   firstCard = deal_card
   secCard = deal_card
-  display_card_total(first )
+  total = firstCard + secCard
+  display_card_total(total)
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user
+  input = get_user_input
+  newCard = input == 'h' ? deal_card : invalid_command
+  card_total += newCard 
 end
 
 def invalid_command
