@@ -61,9 +61,9 @@ def runner
   welcome
   until card_total > 21
     card_total = initial_round
-    display_card_total(card_total)
-    
     updateScore = hit?
+    display_card_total(updateScore)
+    
     if (total > card_total)
     prompt_user
   
