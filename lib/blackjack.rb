@@ -59,15 +59,14 @@ end
 #####################################################
 
 def runner
+  
+  
   welcome
-  
-  
   updateScore = initial_round
   until updateScore > 21 do 
     updateScore = hit?(updateScore)
     display_card_total(updateScore)
   end
   end_game(updateScore)
-  
   
 end
