@@ -60,7 +60,6 @@ end
 
 def runner
   
-  
   welcome
   updateScore = initial_round
   until updateScore > 21 do 
