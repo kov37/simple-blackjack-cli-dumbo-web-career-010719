@@ -61,11 +61,11 @@ end
 
 def runner
   welcome
-  initialScore = initial_round
+  #initialScore = initial_round
   
   
   until updateScore > 21 do 
-    updateScore = hit?(updateScore)
+    updateScore = hit?(initial_round)
     display_card_total(updateScore)
   end
   end_game(updateScore)
