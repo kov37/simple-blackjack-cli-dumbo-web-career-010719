@@ -47,7 +47,7 @@ def hit?(card_total)
   end 
   
   
-  card_total += newCard 
+  card_total + newCard 
 end
 
 def invalid_command
@@ -61,7 +61,7 @@ end
 
 def runner
   welcome
-  #initialScore = initial_round
+  
   
   updateScore = 0 
   until updateScore > 21 do 
