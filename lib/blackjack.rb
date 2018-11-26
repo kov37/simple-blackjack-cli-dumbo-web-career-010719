@@ -28,6 +28,7 @@ end
 
 def hit?(card_total)
   prompt_user
+  newCard = 0
   input = get_user_input
   if input == 's'
   elsif input == 'h'
