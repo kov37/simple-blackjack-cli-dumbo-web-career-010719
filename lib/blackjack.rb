@@ -65,4 +65,5 @@ def runner
     updateScore = hit?(updateScore)
     display_card_total(updateScore)
   end
+  end_game(updateScore)
 end
