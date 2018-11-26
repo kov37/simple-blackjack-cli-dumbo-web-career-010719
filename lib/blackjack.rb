@@ -35,12 +35,13 @@ def hit?(card_total)
   prompt_user
   newCard = 0
   input = get_user_input
-  if input == 's'
-  elsif input == 'h'
-    newCard = deal_card
-  else 
-    invalid_command
-  end 
+    if input == 's'
+    elsif input == 'h'
+      newCard = deal_card
+    else 
+      invalid_command
+    end 
+  
   card_total += newCard 
 end
 
@@ -54,5 +55,11 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  card_total = initial_round
+  
+  total = hit?
+  
+  
+  
 end
