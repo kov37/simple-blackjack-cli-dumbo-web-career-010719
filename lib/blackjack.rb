@@ -40,7 +40,7 @@ def hit?(card_total)
     newCard = deal_card
   else 
     invalid_command
-    
+  end 
   card_total += newCard 
 end
 
