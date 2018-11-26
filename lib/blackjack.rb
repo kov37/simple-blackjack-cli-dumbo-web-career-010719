@@ -59,7 +59,8 @@ end
 
 def runner
   welcome
-  updateScore = hit?(initial_round)
+  intialScore = initial_round
+  updateScore = hit?(initialScore)
   
   until updateScore > 21 do 
     updateScore = hit?(updateScore)
