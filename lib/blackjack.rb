@@ -59,6 +59,7 @@ end
 
 def runner
   welcome
+  card_total = 0
   until card_total > 21 do 
     card_total = initial_round
     updateScore = hit?
