@@ -63,11 +63,5 @@ def runner
     card_total = initial_round
     updateScore = hit?
     display_card_total(updateScore)
-    
-    if (total > card_total)
-      
-  
-  
-  
-  
+  end
 end
